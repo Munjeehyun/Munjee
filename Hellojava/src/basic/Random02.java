@@ -59,7 +59,7 @@ public class Random02 {
 			mango=0 ;		
 			for (int m = 0; m < 5; m++) {
 				for (int k = 0; k < 5; k++) {
-					if(m==n) {
+					if(m==k && A[m][k]==0) {
 						mango++ ;
 						if(mango==5) {
 							cnt=cnt+1 ;
@@ -79,8 +79,9 @@ public class Random02 {
 						}
 					}
 			}
-			mango=0 ;							
+						
 			for (int  m = 0; m < 5; m++) {
+				mango=0 ;	
 				for (int  k = 0; k < 5; k++) {
 					if(A[m][k]==0) {
 						mango++ ;
@@ -90,8 +91,9 @@ public class Random02 {
 						}
 					}
 				}
-			mango=0 ;	
+
 			for (int  m = 0; m < 5; m++) {
+				mango=0 ;	
 				for (int  k = 0; k < 5; k++) {
 					if(A[k][m]==0) {
 						mango++ ;
